@@ -19,6 +19,8 @@ class ChatMap extends Component {
             zoom: 5
         });
         L.tileLayer('http://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.png').addTo(map);
+
+        let marker = L.marker([this.state.lat, this.state.lng]).addTo(map);
     }
 
     render() {
